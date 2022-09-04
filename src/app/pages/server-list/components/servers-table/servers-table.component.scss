@@ -1,3 +1,13 @@
 .table {
   direction: rtl;
+
+}
+
+
+#table-wrapper {
+  @apply fixed w-full py-md;
+}
+#table-scroll {
+  @apply h-full;
+  overflow:auto;
 }

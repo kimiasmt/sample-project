@@ -1,21 +1,26 @@
-<nz-table #basicTable [nzData]="services" class="table">
-  <thead>
-  <tr>
-    <th>نام/ مشخصه</th>
-    <th>هزینه</th>
-    <th>تاریخ سر رسید</th>
-    <th>عملیات</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let service of services">
-    <td>{{ service?.name }}</td>
-    <td>(ماهیانه) تومان{{ service?.amount }}</td>
-    <td>{{ service?.nextduedate }}</td>
-    <td>
-      <nz-divider nzType="vertical"></nz-divider>
-      <a>Delete</a>
-    </td>
-  </tr>
-  </tbody>
-</nz-table>
+<div id="table-wrapper">
+  <div id="table-scroll">
+  <nz-table #basicTable [nzData]="services" class="table">
+    <thead>
+    <tr>
+      <th>نام/ مشخصه</th>
+      <th>هزینه</th>
+      <th>تاریخ سر رسید</th>
+      <th>عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let service of services">
+      <td>{{ service?.name }}</td>
+      <td>(ماهیانه) تومان{{ service?.amount }}</td>
+      <td>{{ service?.nextduedate }}</td>
+      <td>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a>Delete</a>
+      </td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>
+</div>
+
