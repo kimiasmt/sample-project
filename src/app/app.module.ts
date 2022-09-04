@@ -14,6 +14,8 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { ServerListComponent } from './pages/server-list/server-list.component';
 import { ServersTableComponent } from './pages/server-list/components/servers-table/servers-table.component';
 import { HeaderComponent } from './pages/server-list/components/header/header.component';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 
 registerLocaleData(en);
 
@@ -31,6 +33,8 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzButtonModule,
+    NzTableModule,
+    NzDividerModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
