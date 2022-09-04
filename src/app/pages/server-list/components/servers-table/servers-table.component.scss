@@ -1,13 +1,21 @@
 .table {
   direction: rtl;
-
+  &__name {
+    @apply font-semibold;
+  }
 }
 
+td {
+  @apply text-primary text-lg-content;
+}
+th {
+  @apply text-blue font-semibold text-md-title;
+}
 
 #table-wrapper {
-  @apply fixed w-full py-md;
+  @apply fixed w-full p-xl;
 }
 #table-scroll {
-  @apply h-full;
+  height:100vh;
   overflow:auto;
 }

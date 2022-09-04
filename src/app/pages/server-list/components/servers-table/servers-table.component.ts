@@ -12,5 +12,10 @@ export class ServersTableComponent implements OnInit {
   ngOnInit(): void {
     this.services = Services.data;
   }
+  // convertData() {
+  //   Services.data.map(item => {
+  //     if()
+  //   })
+  // }
 
 }

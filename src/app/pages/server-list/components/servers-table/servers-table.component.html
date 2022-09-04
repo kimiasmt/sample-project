@@ -11,12 +11,11 @@
     </thead>
     <tbody>
     <tr *ngFor="let service of services">
-      <td>{{ service?.name }}</td>
+      <td class="table__name">{{ service?.name }}</td>
       <td>(ماهیانه) تومان{{ service?.amount }}</td>
       <td>{{ service?.nextduedate }}</td>
       <td>
-        <nz-divider nzType="vertical"></nz-divider>
-        <a>Delete</a>
+        <button nz-button nzType="default">مدیریت سیستم</button>
       </td>
     </tr>
     </tbody>

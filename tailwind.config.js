@@ -46,27 +46,8 @@ module.exports = {
       xxxxxl: '8em', // 128px
     },
     colors: {
-      light: {
-        blue: '#DCEDF6',
-        gray: '#E2EED8',
-        orange: '#FCF7E4',
-        pink: '#EFDFDF',
-      },
-      gray: {
-        DEFAULT: '#818A91',
-        light: '#DDDDDD',
-        lighter: '#ECEEEF',
-      },
-      black: {
-        DEFAULT: '#373A3C',
-        light: '#55595C',
-        lighter: '#777777',
-      },
-      red: '#D9534F',
-      green: '#5CB85C',
-      orange: '#F0AD4E',
-      blue: '#1C7CD5',
-      lightBlue: '#56C0E0',
+      primary: '#55768B',
+      blue: '#5798C8'
     },
     borderRadius: {
       none: '0',
