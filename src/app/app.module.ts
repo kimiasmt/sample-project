@@ -11,12 +11,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { ServerListComponent } from './pages/server-list/server-list.component';
+import { ServersTableComponent } from './pages/server-list/components/servers-table/servers-table.component';
+import { HeaderComponent } from './pages/server-list/components/header/header.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerListComponent,
+    ServersTableComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
