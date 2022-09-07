@@ -16,3 +16,11 @@
     @apply text-lg-title text-primary font-bold mt-xs mb-sm;
   }
 }
+@media screen and (max-height: 760px ) {
+  .header__item-icon{
+    visibility: hidden;
+  }
+  .header__item-badge{
+    visibility: hidden;
+  }
+}

@@ -12,6 +12,7 @@ export class ServersTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.serverListFilter.servicesData$.subscribe( data =>
+      // console.log(data)
       this.services = data
     );
   }
