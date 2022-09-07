@@ -1,24 +1,24 @@
 export const serviceTypes = [
 {type: "CDN",
-  icon: "'../../../../../assets/icons/CDN.svg'"
+  icon: "assets/icons/CDN.svg"
 },
   {type: "Hosting",
-  icon: "'../../../../../assets/icons/Hosting.svg'"
+  icon: "assets/icons/Hosting.svg"
 },
   {type: "SSl",
-  icon: "'../../../../../assets/icons/SSl.svg'"
+  icon: "assets/icons/SSL.svg"
 },
   {type: "Server",
-  icon: "'../../../../../assets/icons/Server.svg'"
+  icon: "assets/icons/Server.svg"
 },
   {type: "Domain",
-  icon: "'../../../../../assets/icons/Domain.svg'"
+  icon: "assets/icons/Domain.svg"
 },
   {type: "Other",
-  icon: "'../../../../../assets/icons/other-services.svg'"
+  icon: "assets/icons/other-services.svg"
 },
-  {type: "All",
-  icon: "'../../../../../assets/icons/all-services.svg'"
+  {type: "All services",
+  icon: "assets/icons/all-services.svg"
 },
 
 ]
