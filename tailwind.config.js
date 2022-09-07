@@ -48,7 +48,10 @@ module.exports = {
     },
     colors: {
       primary: '#55768B',
-      blue: '#5798C8'
+      blue: '#5798C8',
+      pending: '#FFBA1F',
+      active: "#44D3A7",
+      Cancelled: '#FE6A93'
     },
     borderRadius: {
       none: '0',

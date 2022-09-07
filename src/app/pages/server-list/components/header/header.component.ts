@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { serviceTypes } from '../../config/serviceTypes.';
+import { serviceTypes } from '../../../../../assets/config/serviceTypes.';
 import { Services } from '../../../../../assets/data/Services';
+import { ServerListFilterService } from '../../../../services/server-list-filter.service';
+import { ServerListComponent } from '../../server-list.component';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +12,7 @@ import { Services } from '../../../../../assets/data/Services';
 export class HeaderComponent implements OnInit {
   serviceTypes : Array<{icon:string,type:string}> = [];
   services : any = []
-  constructor() { }
+  constructor(private serverListFilter : ServerListFilterService) { }
 
   ngOnInit(): void {
     this.serviceTypes = serviceTypes;
@@ -19,5 +21,10 @@ export class HeaderComponent implements OnInit {
 
   filterServices (itemType: string) {
     return  this.services.filter((item:any) => item.type == itemType).length;
+  }
+
+  selectService(type:string) {
+    console.log("hi");
+    this.serverListFilter.updateList(type);
   }
 }

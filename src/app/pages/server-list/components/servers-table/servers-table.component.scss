@@ -1,7 +1,13 @@
 .table {
   direction: rtl;
-  &__name {
-    @apply font-semibold;
+  &__item {
+    //@apply flex flex-row;
+  }
+  &__property {
+    @apply font-semibold flex flex-row justify-center;
+  }
+  &__row-icon {
+    @apply w-md h-md mx-xxs;
   }
 }
 
@@ -16,6 +22,6 @@ th {
   @apply fixed w-full p-xl;
 }
 #table-scroll {
-  height:100vh;
+  height:80vh;
   overflow:auto;
 }

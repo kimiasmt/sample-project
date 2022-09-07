@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Services } from '../../../../../assets/data/Services';
+import { ServerListFilterService } from '../../../../services/server-list-filter.service';
 @Component({
   selector: 'app-servers-table',
   templateUrl: './servers-table.component.html',
@@ -7,15 +7,12 @@ import { Services } from '../../../../../assets/data/Services';
 })
 export class ServersTableComponent implements OnInit {
   services: any;
-  constructor() { }
+  convertedServiceData = []
+  constructor(private serverListFilter: ServerListFilterService) { }
 
   ngOnInit(): void {
-    this.services = Services.data;
+    this.serverListFilter.servicesData$.subscribe( data =>
+      this.services = data
+    );
   }
-  // convertData() {
-  //   Services.data.map(item => {
-  //     if()
-  //   })
-  // }
-
 }

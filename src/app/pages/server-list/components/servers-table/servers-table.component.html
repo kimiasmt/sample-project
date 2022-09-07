@@ -1,6 +1,6 @@
 <div id="table-wrapper">
   <div id="table-scroll">
-  <nz-table #basicTable [nzData]="services" class="table">
+  <nz-table [nzData]="services" class="table">
     <thead>
     <tr>
       <th>نام/ مشخصه</th>
@@ -10,8 +10,15 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let service of services">
-      <td class="table__name">{{ service?.name }}</td>
+    <tr *ngFor="let service of services" class="table__item">
+      <td>
+        <div class="table__property">
+          <div [ngClass]="['text',service.type]">•</div>
+          <img class="table__row-icon" [src]="'assets/icons/' + service.type + '.svg'">
+          <div>{{ service?.name }}</div>
+        </div>
+
+      </td>
       <td>(ماهیانه) تومان{{ service?.amount }}</td>
       <td>{{ service?.nextduedate }}</td>
       <td>
