@@ -1,0 +1,18 @@
+.header {
+  @apply flex flex-row justify-center flex-grow w-full pt-md pb-xl ;
+  &__item {
+    @apply flex flex-col px-xl items-center w-1/6;
+  }
+  &__item-icon {
+    width: 40px ;
+    height: 40px;
+  }
+  &__item-badge {
+    direction: rtl;
+    background: rgba(242, 248, 250, 0.7);
+    @apply py-xxxxs px-xs rounded-sm;
+  }
+  &__item-title {
+    @apply text-lg-title text-primary font-bold mt-xs mb-sm;
+  }
+}

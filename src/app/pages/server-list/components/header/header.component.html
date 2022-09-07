@@ -1,1 +1,8 @@
-<p>header works!</p>
+<div class="header">
+  <div class="header__item" *ngFor="let item of serviceTypes">
+    <img class="header__item-icon" [src]="item.icon"/>
+    <div class="header__item-title">{{item.type}}</div>
+    <div class="header__item-badge" *ngIf="item.type!= 'All services'"> {{filterServices(item.type)}} سرویس</div>
+    <div class="header__item-badge" *ngIf="item.type== 'All services'"> {{this.services.length}} سرویس</div>
+  </div>
+</div>
