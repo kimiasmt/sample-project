@@ -8,7 +8,7 @@ export const serviceStates = [
     action: "مدیریت سرویس"
   },
   {status: "Cancelled",
-    color: "#FE6A93",
+    color: "# ",
     action: "لغو"
   },
 ]

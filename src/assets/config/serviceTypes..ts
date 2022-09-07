@@ -5,7 +5,7 @@ export const serviceTypes = [
   {type: "Hosting",
   icon: "assets/icons/Hosting.svg"
 },
-  {type: "SSl",
+  {type: "SSL",
   icon: "assets/icons/SSL.svg"
 },
   {type: "Server",
@@ -15,7 +15,7 @@ export const serviceTypes = [
   icon: "assets/icons/Domain.svg"
 },
   {type: "Other",
-  icon: "assets/icons/other-services.svg"
+  icon: "assets/icons/Other.svg"
 },
   {type: "All services",
   icon: "assets/icons/all-services.svg"

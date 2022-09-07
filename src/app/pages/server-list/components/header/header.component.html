@@ -1,5 +1,5 @@
 <div class="header">
-  <div class="header__item" *ngFor="let item of serviceTypes">
+  <div class="header__item" *ngFor="let item of serviceTypes" (click)="selectService(item.type)">
     <img class="header__item-icon" [src]="item.icon"/>
     <div class="header__item-title">{{item.type}}</div>
     <div class="header__item-badge" *ngIf="item.type!= 'All services'"> {{filterServices(item.type)}} سرویس</div>

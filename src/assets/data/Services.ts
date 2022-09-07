@@ -57,7 +57,7 @@ export const Services = {
           },
        {
               "name": "SSl01",
-              "type":"SSl",
+              "type":"SSL",
               "id": 7,
               "status": "Active",
               "nextduedate": "2021-05-11",
@@ -66,7 +66,7 @@ export const Services = {
           },
       {
               "name": "SSl02",
-              "type":"SSl",
+              "type":"SSL",
               "id": 8,
               "status": "Pending",
               "nextduedate": "2021-05-11",
@@ -75,7 +75,7 @@ export const Services = {
           },
       {
               "name": "SSl03",
-              "type":"SSl",
+              "type":"SSL",
               "id": 9,
               "status": "Cancelled",
               "nextduedate": "2021-05-11",

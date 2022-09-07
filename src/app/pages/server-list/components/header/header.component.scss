@@ -1,7 +1,7 @@
 .header {
   @apply flex flex-row justify-center flex-grow w-full pt-md pb-xl ;
   &__item {
-    @apply flex flex-col px-xl items-center w-1/6;
+    @apply flex flex-col px-xl items-center w-1/6 cursor-pointer;
   }
   &__item-icon {
     width: 40px ;
